@@ -1,0 +1,1512 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.mobile {
+  display: none;
+}
+
+/* HEADER*/
+.head {
+  background-color: #131313;
+}
+
+/* MENU HEADER */
+/* LAPTOP HEADER AND FOOTER STYLES*/
+.header-menu,
+.footer-menu {
+  width: 1256px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-menu .logo,
+.header-menu .callBtn,
+.footer-menu .logo,
+.footer-menu .callBtn {
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.header-menu .logo,
+.footer-menu .logo {
+  color: #e3b873;
+}
+
+.header-menu .menu-links,
+.footer-menu .menu-links {
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.header-menu a,
+.footer-menu a {
+  color: white;
+  padding: 0 23px;
+}
+
+.header-menu a:not(.underline),
+.footer-menu a:not(.underline) {
+  text-decoration: none;
+}
+
+.header-menu .underline,
+.footer-menu .underline {
+  color: #e3b873;
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.header-menu .callBtn,
+.footer-menu .callBtn {
+  font-size: 13px;
+  line-height: 15px;
+  padding: 13px 33px;
+  background-color: #e3b873;
+}
+
+/* BIG HALF OF HEADER*/
+.header-big-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+.header-big-part .header_instagram-link {
+  max-width: 5.125rem;
+}
+
+.header-big-part .header-instagram {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
+  color: #e3b873;
+  font-family: "Futura Md BT", sans-serif;
+  margin-top: 30vh;
+  cursor: pointer;
+}
+
+.header-big-part .header_instagram-vector {
+  margin-top: 7vh;
+  text-align: center;
+}
+
+.header-big-part .header-banner {
+  width: 95vw;
+  max-height: 710px;
+  background-image: url(../media/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header-big-part .header-banner_content {
+  margin: 195px 0 0 60px;
+}
+
+.header-big-part .header-banner_slogan {
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+.header-big-part .header-banner_slogan p {
+  color: #fff;
+}
+
+.header-big-part .header-banner_slogan span {
+  color: #e3b873;
+}
+
+.header-big-part .header-banner_description {
+  font-family: "Futura Bk BT", sans-serif;
+  color: white;
+  font-size: 22px;
+  line-height: 30px;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.header-big-part .header-banner_links {
+  padding-top: 40px;
+}
+
+.header-big-part .header-banner_links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.header-big-part .header-banner_links .calculate {
+  background-color: #e3b873;
+  padding: 20px 40px;
+}
+
+.header-big-part .header-banner_links .submit {
+  border: 1px solid #fff;
+  padding: 20px 23px;
+  margin-left: 20px;
+}
+
+/* SCROLL DOWN BUTTON */
+.scroll-down-btn {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  padding: 35px 50px;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+.scroll-down-btn p {
+  font-family: "Yeseva One", cursive;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  padding-right: 10px;
+}
+
+/* THIS SHOULD MAKE A BACKGROUND WITH LINES */
+main .bg-lines {
+  background-image: url(../media/bg-lines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* PROJECTS BLOCK */
+.projects {
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10vh 0 9vh 0;
+}
+
+.projects .projects_left-part {
+  width: 25%;
+  padding-top: 3rem;
+}
+
+.projects .projects_left-part_heading {
+  color: #e3b873;
+  font-size: 27px;
+  line-height: 37px;
+  font-family: "Yeseva One", cursive;
+}
+
+.projects .projects_left-part_text {
+  color: #fff;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  padding-top: 2rem;
+}
+
+.projects .project-info {
+  padding-top: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.projects .project-info_item-heading {
+  color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.projects .project-info_item-text {
+  color: #fff;
+  font-family: "Futura Bk BT", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.projects .projects_right-part {
+  width: 55%;
+}
+
+.projects .projects-links {
+  font-family: "Yeseva One", cursive;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.projects .projects-links a {
+  color: #e3b873;
+  padding-right: 3rem;
+}
+
+.projects .projects-photos {
+  padding-top: 3rem;
+}
+
+/* ONLINE CONTROL */
+.online-control {
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(50%, transparent)), url(../media/online-control-bg.png);
+  background: linear-gradient(180deg, #131313 url(../media/online-control-bg.png) 50%, transparent 50%), url(../media/online-control-bg.png);
+  background-repeat: repeat-x;
+  background-position: top left;
+  text-align: center;
+}
+
+.online-control .online-control_heading {
+  color: white;
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.online-control hr {
+  color: #e3b873;
+  width: 3.5rem;
+  margin: 0 auto;
+}
+
+.online-control .online-control_text {
+  padding-top: 2rem;
+  color: #363636;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.online-control .online-control_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 6rem;
+  max-width: 770px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.online-control .online-control_form-item {
+  font-family: "Futura Bk BT", sans-serif;
+  padding-right: 3.5rem;
+}
+
+.online-control .online-control_form-item label {
+  color: #959595;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.online-control .online-control_form-item input[type="text"] {
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  font-family: "Futura Md BT", sans-serif;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+}
+
+.online-control .online-control_form-item input[type="button"] {
+  font-family: "Futura Md BT", sans-serif;
+  border: none;
+  font-size: 15px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #e3b873;
+  padding: 1.25rem 4.5rem;
+}
+
+.online-control .online-control_form-checkbox {
+  padding-top: 2rem;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.online-control .online-control_form-checkbox input[type="checkbox"] {
+  color: #fff;
+  background-color: #e3b873;
+}
+
+/* TYPES OF REPAIR */
+.types-of-repair {
+  padding-top: 9rem;
+  text-align: center;
+}
+
+.types-of-repair_heading {
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.types-of-repair_icon {
+  padding: 1rem 2rem;
+}
+
+.types-of-repair_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 600px;
+}
+
+.types-of-repair_content-item {
+  position: relative;
+}
+
+.types-of-repair_content-item .types-of-repair_content-item-box {
+  text-align: left;
+  background-color: #fff;
+  padding: 1.75rem 5rem 3rem 2rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 18.5rem;
+  left: 2rem;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.types-of-repair_content-item .types-of-repair_content-item-box a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 1rem;
+  position: absolute;
+  top: 90%;
+}
+
+.types-of-repair_content-item .types-of-repair_content-item-heading {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Yeseva One", cursive;
+}
+
+.types-of-repair_content-item .types-of-repair_content-item-list {
+  font-family: "Futura Bk BT", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+
+/* MAIL BOX */
+.mailbox {
+  background-image: url(../media/mail-bg.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-top: 8rem;
+}
+
+.mailbox-container {
+  width: 50%;
+  margin-left: 60%;
+}
+
+.mailbox_black-box {
+  background-image: url(../media/mailbox-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 7rem;
+  max-width: 510px;
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.mailbox_black-box form {
+  padding: 0 3rem 2rem 3rem;
+  width: 410px;
+}
+
+.mailbox_black-box .mailbox_black-box-heading {
+  padding: 2.5rem 6.5rem;
+  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.mailbox_black-box label {
+  color: #959595;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.mailbox_black-box input {
+  margin-bottom: 3rem;
+}
+
+.mailbox_black-box input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Futura Md BT", sans-serif;
+  border-bottom: 1px solid #959595;
+  width: 100%;
+}
+
+.mailbox_black-box input[type="checkbox"] {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.mailbox_black-box input[type="button"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e3b873;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.icon-under-mailbox {
+  margin-top: 2rem;
+}
+
+/* DESIGN STYLES */
+.design-styles {
+  background: url(../media/design-styles-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  margin-top: 8rem;
+  background-position: center;
+}
+
+.design-styles-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-height: 110vh;
+}
+
+.design-styles_heading {
+  color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 27px;
+  line-height: 37px;
+  padding-bottom: 3rem;
+}
+
+.design-styles_left-part {
+  padding: 8.5rem 0 6rem 0;
+}
+
+.design-styles_left-part-content {
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.design-styles_left-part-content p {
+  font-size: 20px;
+  line-height: 34px;
+  padding: 0.75rem;
+  color: #fff;
+}
+
+.design-styles_right-part {
+  width: 70%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (360px)[2];
+      grid-template-columns: repeat(2, 360px);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.design-styles_right-part img {
+  max-width: 360px;
+  padding: 1.5rem;
+}
+
+.design-styles_right-part .first {
+  padding-top: 5rem;
+}
+
+.design-styles_right-part .second {
+  padding-bottom: 5rem;
+}
+
+/* DESIGN PROJECT TYPES */
+.design-project-types {
+  padding-top: 9rem;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #131313));
+  background: linear-gradient(180deg, transparent 50%, #131313 50%);
+}
+
+.design-project-types_heading {
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.design-project-types_text {
+  font-family: "Futura Md BT", sans-serif;
+  color: #363636;
+  font-size: 20px;
+  line-height: 27px;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 2.5rem;
+}
+
+.design-project-types_icon {
+  padding: 1rem 0 1.5rem 0;
+}
+
+.design-project-types_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 750px;
+}
+
+.design-project-types_item {
+  position: relative;
+}
+
+.design-project-types_item .design-project-types-item-box {
+  text-align: left;
+  background-color: #fff;
+  padding: 1.5rem 2rem 3.75rem 2rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 18.5rem;
+  left: 25%;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.design-project-types_item .design-project-types-item-box a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 1rem;
+  position: absolute;
+  top: 90%;
+}
+
+.design-project-types_item .design-project-types-item-heading {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Yeseva One", cursive;
+}
+
+.design-project-types_item .design-project-types-item-list {
+  font-family: "Futura Bk BT", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+
+/* OUR WORK PROCESSES */
+.our-work {
+  background: #131313;
+}
+
+.our-work_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-owrk_left-half {
+  max-width: 35%;
+}
+
+.our-owrk_left-half-heading .overhead {
+  color: #fff;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.our-owrk_left-half-heading .heading {
+  color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 27px;
+  line-height: 37px;
+  padding-top: 1rem;
+}
+
+.our-owrk_left-half-main-content {
+  padding: 90px 0 60px 0;
+}
+
+.our-owrk_left-half-main-content .cyfer {
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.our-owrk_left-half-main-content .left-content-heading {
+  color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 15px;
+  line-height: 23px;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.our-owrk_left-half-main-content .left-content-text {
+  color: #fff;
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.our-work_right-half {
+  max-width: 65%;
+}
+
+.our-work_right-half-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(6rem, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(6rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.our-work_right-half-grid .digit {
+  font-family: "Yeseva One", cursive;
+  font-size: 15px;
+  line-height: 21px;
+  width: 1.5rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e3b873;
+}
+
+.our-work_right-half-grid .grid-text {
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 1rem;
+  max-width: 9rem;
+}
+
+.our-work_right-half-grid-item {
+  color: #fff;
+}
+
+.right-half_img {
+  padding-top: 2.75rem;
+}
+
+/* OUR TEAM */
+.our-team {
+  text-align: center;
+  padding-top: 6rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #131313), color-stop(50%, transparent));
+  background: linear-gradient(180deg, #131313 65%, transparent 50%);
+}
+
+.our-team-heading {
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.our-team-icon {
+  padding: 1rem 0 2rem 0;
+}
+
+.team-text {
+  color: #fff;
+  font-family: "Futura Bk BT", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.our-team-flex {
+  padding-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.our-team-flex_item {
+  position: relative;
+  min-height: 505px;
+}
+
+hr {
+  width: 3.5rem;
+  color: #e3b873;
+  margin: 3.5rem auto 1rem auto;
+}
+
+.info-box {
+  position: absolute;
+  top: 65%;
+  background-color: #fff;
+  left: 25%;
+}
+
+.name {
+  color: #363636;
+  font-family: "Yeseva One", cursive;
+  padding-top: 1.5rem;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.profession {
+  color: #959595;
+  font-family: "Futura Bk BT", sans-serif;
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.experience {
+  font-family: "Yeseva One", cursive;
+  color: #fff;
+  background-color: #e3b873;
+  padding: 1rem;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.our-team-text {
+  font-family: "Futura Bk BT", sans-serif;
+  color: #363636;
+  font-size: 20px;
+  line-height: 34px;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+/* OUR CLIENTS */
+.our-clients {
+  margin-top: 6rem;
+}
+
+.our-clients-top {
+  text-align: center;
+}
+
+.our-clients-heading {
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.our-clients-icon {
+  padding: 1rem 0 1.75rem 0;
+}
+
+.our-clients-text {
+  color: #363636;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.our-clients_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.5rem;
+}
+
+.our-clients_flex-item {
+  max-width: 23rem;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+}
+
+.client img {
+  padding: 1.75rem;
+}
+
+.client-name {
+  color: #363636;
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+  line-height: 23px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.client-text {
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #959595;
+  max-width: 20rem;
+  padding: 1.5rem 2rem 3.5rem 1.5rem;
+}
+
+.client-parameters {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Yeseva One", cursive;
+  color: white;
+  background-color: #e3b873;
+  -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+          box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.client-parameters .param-one,
+.client-parameters .param-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.client-parameters .param-one {
+  border-right: 2px solid #fff;
+}
+
+.client-parameters p {
+  padding-left: 1rem;
+}
+
+/* CONTACT FORM */
+.form-contact {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(24, 24, 24, 0.9)));
+  background: linear-gradient(180deg, transparent 50%, rgba(24, 24, 24, 0.9) 50%);
+  margin-top: 9rem;
+}
+
+.form-container {
+  background-image: url(../media/mailbox-bg.png);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-contact_heading {
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 2.75rem;
+}
+
+.form-container_inputs {
+  padding: 2rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container_inputs .form-item {
+  padding-bottom: 3rem;
+}
+
+.form-container_inputs .gray-label {
+  font-family: "Futura Md BT", sans-serif;
+  color: #959595;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.form-container_inputs .white-label {
+  color: #fff;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form-container_inputs input[type="text"] {
+  border: none;
+  color: #fff;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background: transparent;
+  border-bottom: 1px solid #959595;
+}
+
+.form-container_inputs input[type="button"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e3b873;
+  padding: 1.25rem 3.375rem;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/* ADDRESSES */
+.addresses {
+  padding: 3rem 0 4rem 0;
+  text-align: center;
+  background-color: rgba(24, 24, 24, 0.72);
+  background-image: url(../media/address-bg.png);
+  background-size: cover;
+}
+
+.addresses-heading {
+  color: #e3b873;
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.addresses-icons {
+  padding: 1.5rem 0 3rem 0;
+}
+
+.foot {
+  background-color: #131313;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1275px) {
+  .container,
+  .header-menu,
+  .footer-menu {
+    width: 1068px;
+    margin: 0 auto;
+  }
+  .header-menu,
+  .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .header-menu .menu-links,
+  .footer-menu .menu-links {
+    padding: 1.5rem 0;
+  }
+  /* PROJECTS */
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .projects_left-part,
+  .projects .projects_right-part {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects .projects_left-part_heading,
+  .projects .projects_left-part_text {
+    text-align: center;
+  }
+  .projects .project-info {
+    width: 50%;
+    margin: 0 auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .projects .projects_right-part {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  /* TYPES OF REPAIR */
+  .types-of-repair .types-of-repair_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .types-of-repair .types-of-repair_content .types-of-repair_content-item {
+    height: 40rem;
+  }
+  /* MAILBOX */
+  .mailbox {
+    background: transparent;
+  }
+  .mailbox .mailbox-container {
+    margin: 0 auto;
+  }
+  /* DESIGN STYLES */
+  .design-styles_left-part {
+    width: 30%;
+  }
+  .design-styles_right-part {
+    width: 60%;
+  }
+  .design-styles_right-part {
+    justify-items: center;
+  }
+  /*DESIGN PROJECTS */
+  .design-project-types {
+    padding-top: 15rem;
+  }
+  .design-project-types .design-project-types_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .design-project-types .design-project-types_flex .design-project-types_item {
+    height: 46rem;
+  }
+  /* OUR WORK */
+  .our-work {
+    padding-top: 1rem;
+  }
+  /* OUR TEAM */
+  .our-team .our-team-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-team .our-team-flex .our-team-flex_item {
+    height: 32rem;
+  }
+  /* OUR CLIENTS */
+  .our-clients .our-clients_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-clients .our-clients_flex .our-clients_flex-item {
+    padding-bottom: 1rem;
+  }
+  /* FORM */
+  .form-container_inputs {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1068px) {
+  .no-mobile {
+    display: none;
+    position: absolute;
+  }
+  .mobile {
+    display: block;
+  }
+  .container {
+    width: 680px;
+  }
+  /*HEADER */
+  .header-big-part .header-banner {
+    width: 100%;
+    background-size: cover;
+  }
+  .header-big-part .header-banner_content {
+    margin: 5rem 5rem 4rem 1rem;
+  }
+  /* ONLINE_CONTROL */
+  .online-control .online-control_video {
+    width: 40rem;
+  }
+  .online-control_form {
+    width: 40rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .online-control_form .online-control_form-item {
+    padding: 1rem;
+  }
+  /* DESIGN STYLES */
+  .design-styles {
+    background-size: cover;
+  }
+  .design-styles .design-styles-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .design-styles .design-styles-container .design-styles_left-part {
+    padding: 5rem 0 0 0;
+  }
+  /* ADDRESSES */
+  .addresses .map {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .container,
+  .header-menu {
+    width: 21.25rem;
+    margin: 0 auto;
+  }
+  .no-mobile {
+    display: none;
+    position: absolute;
+  }
+  .mobile {
+    display: block;
+  }
+  .header-menu {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header-menu a.underline {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* HEADER */
+  .header-big-part .header-banner {
+    width: 100%;
+    background-size: cover;
+  }
+  .header-big-part .header-banner_content {
+    margin: 5rem 1rem 4rem 1rem;
+  }
+  .header-big-part .header-banner_slogan {
+    font-size: 23px;
+    line-height: 31px;
+  }
+  .header-big-part .header-banner_description {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .header-big-part .header-banner_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .header-big-part .header-banner_links a {
+    text-align: center;
+  }
+  .header-big-part .header-banner_links .submit {
+    margin: 1.7rem 0 0 0;
+  }
+  /* PROJECTS */
+  .projects {
+    background: #252525;
+    padding: 0;
+  }
+  .projects .projects_left-part_heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .projects .projects_left-part_text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .projects .project-info_item-heading,
+  .projects .project-info_item-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .projects .project-info {
+    width: 100%;
+  }
+  .projects .projects-photos img {
+    width: 21.25rem;
+  }
+  /* ONLINE CONTROL */
+  .online-control {
+    background: #252525;
+    padding-top: 3rem;
+  }
+  .online-control img {
+    max-width: 21.25rem;
+  }
+  .online-control .online-control_text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .online-control .online-control_form {
+    padding-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 21.25rem;
+  }
+  .online-control .online-control_form .online-control_form-item {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .online-control .online-control_form .online-control_form-item input[type="text"] {
+    color: white;
+    background: transparent;
+    width: 100%;
+  }
+  .online-control .online-control_form .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .online-control .online-control_form .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 4rem;
+  }
+  .online-control .online-control_form .third {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    color: #fff;
+  }
+  .online-control .online-control_form .fourth {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-top: 4rem;
+  }
+  .online-control .online-control_form .fourth input[type="button"] {
+    width: 100%;
+  }
+  /* TYPES OF REPAIR */
+  .types-of-repair {
+    background: transparent;
+    padding-top: 3.5rem;
+  }
+  .types-of-repair .types-of-repair_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .types-of-repair .types-of-repair_content .types-of-repair_content-item {
+    width: 100%;
+    height: 30rem;
+    padding: 4rem 0;
+  }
+  .types-of-repair .types-of-repair_content .types-of-repair_content-item img {
+    max-width: 21.25rem;
+  }
+  .types-of-repair .types-of-repair_content .types-of-repair_content-item .types-of-repair_content-item-box {
+    left: 0;
+  }
+  /* DESIGN STYLES */
+  .design-styles {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #252525));
+    background: linear-gradient(180deg, transparent 50%, #252525 50%);
+    margin-top: 4rem;
+  }
+  .design-styles .design-styles-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .design-styles .design-styles-container .design-styles_left-part {
+    padding: 0 0 1.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  .design-styles .design-styles-container .design-styles_heading {
+    padding-bottom: 0;
+  }
+  .design-styles .design-styles-container .mobile {
+    margin: 0 auto;
+  }
+  .design-styles .design-styles-container .mobile img {
+    width: 21.25rem;
+    height: 15rem;
+  }
+  /* DESIGN PROJECT-TYPES */
+  .design-project-types {
+    background: #252525;
+    padding-top: 3rem;
+  }
+  .design-project-types .design-project-types_heading,
+  .design-project-types .design-project-types_text {
+    color: #fff;
+  }
+  .design-project-types .design-project-types_text {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .design-project-types .design-project-types_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .design-project-types .design-project-types_flex .design-project-types_item {
+    height: 21.25rem;
+    padding: 6rem 0;
+  }
+  .design-project-types .design-project-types_flex .design-project-types_item img {
+    width: 21.25rem;
+  }
+  .design-project-types .design-project-types_flex .design-project-types_item .design-project-types-item-box {
+    left: 0;
+  }
+  /* OUR TEAM */
+  .our-team {
+    background: #252525;
+    padding-top: 15rem;
+  }
+  .our-team .our-team-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-team .our-team-flex .our-team-flex_item {
+    min-height: 25rem;
+    padding-bottom: 6rem;
+  }
+  /* CONTACT FORM */
+  .form-contact {
+    background: #252525;
+    margin-top: 0;
+  }
+  .form-contact .form-container {
+    width: 21.25rem;
+    background: #252525;
+  }
+  .form-contact .form-container_inputs {
+    padding: 2rem 0;
+  }
+  .form-contact .form-container_inputs input[type="button"], .form-contact .form-container_inputs input[type="text"] {
+    font-family: "Futura Md BT", sans-serif;
+    width: 100%;
+  }
+  .form-contact .gray-label {
+    color: white;
+  }
+  /* ADDRESSES */
+  .addresses {
+    background: #252525;
+    padding: 3rem 0 2rem 0;
+  }
+  .addresses .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .addresses .flex .map {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 21.25rem;
+    height: 16rem;
+  }
+  .addresses .flex .addresses-heading {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 2rem;
+  }
+  .addresses .flex .addresses-icons {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    padding: 1.5rem 0 0 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
