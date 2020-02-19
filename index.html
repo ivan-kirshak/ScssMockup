@@ -21,10 +21,10 @@
                 <a href="#measurement">MEASUREMENT</a>
                 <a href="#team">TEAM</a>
                 <a href="#reviews">REVIEWS</a>
-                <a href="contact">CONTACT</a>
+                <a href="#contact">CONTACT</a>
             </div>
             <div class="call">
-                <a href="#" class="underline">+7 (928) 768-32-39</a>
+                <a href="#" class="underline" id="numCallBtn">+7 (928) 768-32-39</a>
                 <a href="#" id="callBtn" class="callBtn no-mobile">REQUEST A CALL</a>
             </div>
         </div>
@@ -55,6 +55,42 @@
             </div>
         </div>
     </header>
+    <div class="main-form" id="mainForm">
+        <i class="close-button" id="closeBtn"><img src="media/close-button.svg"></i>
+        <div class="form-inner" id="innerForm">
+            <p class="main-form-inner_heading">Leave a request and our manager will contact you shortly</p>
+
+            <div class="label">
+                <label for="Name">Name:</label>
+                <br>
+                <input type="text" id="mainFormName" placeholder="Your Name">
+                <div class="error" id="mainNameErr"></div>
+            </div>
+
+            <div class="label">
+                <label for="Number">Number:</label>
+                <br>
+                <input type="text" id="mainFormNum" placeholder="Your phone number:">
+                <div class="error" id="mainNumErr"></div>
+            </div>
+
+            <div class="label">
+                <label for="Email">Email</label>
+                <br>
+                <input type="text" id="mainFormMail" placeholder="Your email">
+                <div class="error" id="mainMailErr"></div>
+                <br>
+                <br>
+                <input type="checkbox" id="mainFormCheckbox">
+                <label for="checkbox">I agree to the processing of personal data</label>
+                <div class="error" id="mainCheckErr"></div>
+            </div>
+
+            <div class="label">
+                <input type="button" value="SUBMIT" id="mainFormSubmit">
+            </div>
+        </div>
+    </div>
     <div class="scroll-down-btn no-mobile">
         <p>SCROLL DOWN</p>
         <img src="media/btn-down.svg">
@@ -104,7 +140,7 @@
                     <br>
                     <img src="media/online-control-icon.svg" class="online-control_icon">
                     <br>
-                    <img src="media/online-control-video.png"class="online-control_video">
+                    <img src="media/online-control-video.png" class="online-control_video">
                     <hr>
                     <p class="online-control_text"> At each facility, a camera is installed that broadcasts the progress
                         of
@@ -119,26 +155,32 @@
                         <div class="online-control_form-item first">
                             <label for="name">Name</label>
                             <br>
-                            <input type="text" placeholder="What is your name:">
+                            <input type="text" placeholder="What is your name:" id="onlineControlName">
+                            <div class="error" id="onlineControlNameError"></div>
                         </div>
 
                         <div class="online-control_form-item second">
                             <label for="phone-num">Phone</label>
                             <br>
-                            <input type="text" placeholder="Your phone number:">
+                            <input type="text" placeholder="Your phone number:" id="onlineControlPhone">
+                            <div class="error" id="onlineControlPhoneError"></div>
                         </div>
 
                         <div class="online-control_form-item fourth">
-                            <input type="button" value="SUBMIT">
+                            <input type="button" value="SUBMIT" id="onlineControlSumbit">
                         </div>
                         <div class="online-control_form-checkbox third">
-                            <input type="checkbox" name="personalData" id="personalData" checked>
+                            <input type="checkbox" name="personalData" id="onlineControlCheckbox">
                             <label for="personalData">I agree to the processing of personal data</label>
+                            <div class="error" id="onlineControlCheckboxError"></div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
+
+            <div class="answer" id="onlineControlAnswer"></div>
+
             <div class="types-of-repair">
                 <div class="container">
                     <p class="types-of-repair_heading">TYPES OF REPAIR</p>
@@ -198,7 +240,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mailbox no-mobile">
+            <div class="mailbox no-mobile" id="measurement">
                 <div class="container">
                     <div class="mailbox-container">
                         <div class="mailbox_black-box">
@@ -206,20 +248,24 @@
                             <form>
                                 <label for="mailbox">Name</label>
                                 <br>
-                                <input type="text" name="mailbox" id="Your name:">
+                                <input type="text" name="mailbox" id="measureName" placeholder="Your name:">
+                                <div class="error" id="measureNameErr"></div>
                                 <br>
                                 <label for="">Phone</label>
                                 <br>
-                                <input type="text" name="mailbox" id="" placeholder="Your phone number:">
+                                <input type="text" name="mailbox" id="measurePhone" placeholder="Your phone number:">
+                                <div class="error" id="measurePhoneErr"></div>
                                 <br>
                                 <label for="">Email</label>
                                 <br>
-                                <input type="text" name="mailbox" id="" placeholder="Your Email: ">
+                                <input type="text" name="mailbox" id="measureMail" placeholder="Your Email: ">
+                                <div class="error" id="measureMailErr"></div>
                                 <br>
-                                <input type="checkbox" name="mailbox" id="">
+                                <input type="checkbox" name="mailbox" id="measureCheckbox">
                                 <label for="">I agree to the processing of personal data</label>
+                                <div class="error" id="measureCheckErr"></div>
                                 <br>
-                                <input type="button" value="CALL THE MEASURER">
+                                <input type="button" value="CALL THE MEASURER" id="measureBtn">
                             </form>
                         </div>
                         <br>
@@ -229,6 +275,9 @@
                     </div>
                 </div>
             </div>
+
+            <div class="answer" id="measureAnswer"></div>
+
             <div class="design-styles">
                 <div class="design-styles-container">
                     <div class="design-styles_left-part">
@@ -248,7 +297,7 @@
                         </div>
                     </div>
                     <div class="mobile">
-                        <img src="media/design-styles-img-1.png" >
+                        <img src="media/design-styles-img-1.png">
                     </div>
                     <div class="design-styles_right-part no-mobile">
                         <div class="first">
@@ -378,7 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div class="our-team">
+            <div class="our-team" id="team">
                 <div class="container">
                     <p class="our-team-heading">OUR TEAM</p>
                     <img src="media/our-team-icon.svg" class="our-team-icon">
@@ -419,7 +468,7 @@
                         work corresponding to his specialty.</p>
                 </div>
             </div>
-            <div class="our-clients no-mobile">
+            <div class="our-clients no-mobile" id="reviews">
                 <div class="container">
                     <div class="our-clients-top">
                         <p class="our-clients-heading">OUR CLIENTS</p>
@@ -503,43 +552,50 @@
                     </div>
                 </div>
             </div>
-            <div class="form-contact">
+            <div class="form-contact" id="contact">
                 <div class="form-container">
                     <p class="form-contact_heading">HAVE ANY QUESTIONS?</p>
                     <div class="form-container_inputs">
                         <div class="form-item">
                             <label for="name" class="gray-label">Name:</label>
                             <br>
-                            <input type="text">
+                            <input type="text" id="contactName" placeholder="Your Name:">
+                            <div class="error" id="contactNameErr"></div>
                         </div>
 
                         <div class="form-item">
                             <label for="phone" class="gray-label">Phone:</label>
                             <br>
-                            <input type="text">
+                            <input type="text" id="contactPhone" placeholder="Your Phone:">
+                            <div class="error" id="contactPhoneErr"></div>
                             <br>
                         </div>
 
                         <div class="form-item">
                             <label for="question" class="gray-label">Question:</label>
                             <br>
-                            <input type="text">
+                            <input type="text" id="contactQuestion" placeholder="Your Question:">
+                            <div class="error" id="contactQuestionErr"></div>
                             <br>
                         </div>
 
                         <div class="form-item">
-                            <input type="checkbox" id="">
+                            <input type="checkbox" id="contactCheckbox">
                             <label for="checkbox" class="white-label">I agree to the processing of personal data</label>
+                            <div class="error" id="contactCheckErr"></div>
                             <br>
                         </div>
 
                         <div class="form-item">
-                            <input type="button" value="SUBMIT">
+                            <input type="button" value="SUBMIT" id="contactBtn">
                         </div>
 
                     </div>
                 </div>
             </div>
+
+            <div class="answer" id="contactAnswer"></div>
+
             <div class="addresses">
                 <div class="container flex">
                     <p class="addresses-heading">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum <br> Tel +7

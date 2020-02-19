@@ -12,6 +12,31 @@
   display: none;
 }
 
+.error {
+  color: red;
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.white {
+  color: #fff;
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.answer {
+  background: transparent;
+  font-family: "Futura Md BT", sans-serif;
+  text-align: center;
+  color: #363636;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.answer-param {
+  color: #e3b873;
+  font-family: "Futura Md BT", sans-serif;
+}
+
 /* HEADER*/
 .head {
   background-color: #131313;
@@ -74,6 +99,8 @@
   line-height: 15px;
   padding: 13px 33px;
   background-color: #e3b873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
 
 /* BIG HALF OF HEADER*/
@@ -153,6 +180,8 @@
 .header-big-part .header-banner_links .calculate {
   background-color: #e3b873;
   padding: 20px 40px;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 }
 
 .header-big-part .header-banner_links .submit {
@@ -184,6 +213,77 @@
   padding-right: 10px;
 }
 
+/* FORM */
+.main-form {
+  background: url(../media/mailbox-bg.png);
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  width: 40%;
+}
+
+.close-button {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.form-inner {
+  padding: 2rem 3rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-inner .label {
+  padding-bottom: 3rem;
+}
+
+.form-inner .label:last-of-type {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.form-inner label {
+  font-family: "Futura Md BT", sans-serif;
+  color: #959595;
+  font-size: 0.9rem;
+}
+
+.form-inner input[type="text"] {
+  border: none;
+  outline: none;
+  font-family: "Futura Md BT", sans-serif;
+  color: #fff;
+  background: transparent;
+  border-bottom: 1px solid #959595;
+  width: 100%;
+}
+
+.form-inner input[type="button"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e3b873;
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 0.9rem;
+  padding: 1rem 1.5rem;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.main-form-inner_heading {
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+  padding-bottom: 2rem;
+}
+
 /* THIS SHOULD MAKE A BACKGROUND WITH LINES */
 main .bg-lines {
   background-image: url(../media/bg-lines.png);
@@ -204,6 +304,7 @@ main .bg-lines {
 
 .projects .projects_left-part {
   width: 25%;
+  margin: 0 auto;
   padding-top: 3rem;
 }
 
@@ -258,6 +359,7 @@ main .bg-lines {
 .projects .projects-links a {
   color: #e3b873;
   padding-right: 3rem;
+  text-decoration: none;
 }
 
 .projects .projects-photos {
@@ -497,6 +599,8 @@ main .bg-lines {
   line-height: 18px;
   padding: 1.5rem;
   text-align: left;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 }
 
 .icon-under-mailbox {
@@ -531,6 +635,7 @@ main .bg-lines {
 
 .design-styles_left-part {
   padding: 8.5rem 0 6rem 0;
+  margin: 0 auto;
 }
 
 .design-styles_left-part-content {
@@ -545,19 +650,16 @@ main .bg-lines {
 }
 
 .design-styles_right-part {
-  width: 70%;
+  width: 65%;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (360px)[2];
-      grid-template-columns: repeat(2, 360px);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (25rem)[2];
+      grid-template-columns: repeat(2, 25rem);
   grid-gap: 1rem;
 }
 
 .design-styles_right-part img {
-  max-width: 360px;
   padding: 1.5rem;
 }
 
@@ -567,6 +669,14 @@ main .bg-lines {
 
 .design-styles_right-part .second {
   padding-bottom: 5rem;
+}
+
+.design-styles_right-part .first,
+.design-styles_right-part .second {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* DESIGN PROJECT TYPES */
@@ -999,6 +1109,7 @@ hr {
   line-height: 24px;
   background: transparent;
   border-bottom: 1px solid #959595;
+  width: 100%;
 }
 
 .form-container_inputs input[type="button"] {
@@ -1009,6 +1120,8 @@ hr {
   padding: 1.25rem 3.375rem;
   font-size: 15px;
   line-height: 26px;
+  -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+          box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
 }
 
 /* ADDRESSES */
@@ -1056,6 +1169,9 @@ hr {
   .header-menu .menu-links,
   .footer-menu .menu-links {
     padding: 1.5rem 0;
+  }
+  .main-form {
+    top: 9rem;
   }
   /* PROJECTS */
   .projects {
@@ -1177,10 +1293,26 @@ hr {
   .mobile {
     display: block;
   }
-  .container {
+  .container,
+  .header-menu {
     width: 680px;
   }
+  .main-form {
+    top: 4rem;
+    width: auto;
+  }
   /*HEADER */
+  .header-menu {
+    font-size: 12px;
+    line-height: 14px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header-menu a.underline {
+    color: #fff;
+  }
   .header-big-part .header-banner {
     width: 100%;
     background-size: cover;
@@ -1239,14 +1371,6 @@ hr {
   }
   .mobile {
     display: block;
-  }
-  .header-menu {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .header-menu a.underline {
-    color: #fff;
-    text-decoration: none;
   }
   /* HEADER */
   .header-big-part .header-banner {
@@ -1468,7 +1592,8 @@ hr {
   .form-contact .form-container_inputs {
     padding: 2rem 0;
   }
-  .form-contact .form-container_inputs input[type="button"], .form-contact .form-container_inputs input[type="text"] {
+  .form-contact .form-container_inputs input[type="button"],
+  .form-contact .form-container_inputs input[type="text"] {
     font-family: "Futura Md BT", sans-serif;
     width: 100%;
   }

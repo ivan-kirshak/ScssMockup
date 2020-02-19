@@ -20,6 +20,27 @@ $bg-mobile: #252525;
 .mobile {
   display: none;
 }
+.error {
+  color: rgb(255, 0, 0);
+  font-family: $font-two;
+}
+.white {
+  color: $white;
+  font-family: $font-two;
+}
+.answer {
+  background: transparent;
+  font-family: $font-two;
+  text-align: center;
+  color: $dark-text;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+.answer-param {
+  color: $gold;
+  font-family: $font-two;
+}
 /* HEADER*/
 
 .head {
@@ -65,6 +86,7 @@ $bg-mobile: #252525;
     line-height: 15px;
     padding: 13px 33px;
     background-color: $gold;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   }
 }
 
@@ -132,6 +154,7 @@ $bg-mobile: #252525;
     .calculate {
       background-color: $gold;
       padding: 20px 40px;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     }
     .submit {
       border: 1px solid #fff;
@@ -160,6 +183,64 @@ $bg-mobile: #252525;
     padding-right: 10px;
   }
 }
+
+/* FORM */
+.main-form {
+  background: url(../media/mailbox-bg.png);
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  width: 40%;
+}
+.close-button {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.form-inner {
+  padding: 2rem 3rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    padding-bottom: 3rem;
+  }
+  .label:last-of-type {
+    align-self: flex-end;
+  }
+  label {
+    font-family: $font-two;
+    color: $gray-text;
+    font-size: 0.9rem;
+  }
+  input[type="text"] {
+    border: none;
+    outline: none;
+    font-family: $font-two;
+    color: $white;
+    background: transparent;
+    border-bottom: 1px solid $gray-text;
+    width: 100%;
+  }
+  input[type="button"] {
+    border: none;
+    outline: none;
+    color: $white;
+    background-color: $gold;
+    font-family: $font-two;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  }
+}
+.main-form-inner_heading {
+  color: $white;
+  font-family: $font-three;
+  padding-bottom: 2rem;
+}
+
 /* THIS SHOULD MAKE A BACKGROUND WITH LINES */
 main {
   .bg-lines {
@@ -178,6 +259,7 @@ main {
 
   .projects_left-part {
     width: 25%;
+    margin: 0 auto;
     padding-top: 3rem;
   }
   .projects_left-part_heading {
@@ -222,6 +304,7 @@ main {
     a {
       color: $gold;
       padding-right: 3rem;
+      text-decoration: none;
     }
   }
   .projects-photos {
@@ -433,6 +516,7 @@ main {
     line-height: 18px;
     padding: 1.5rem;
     text-align: left;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   }
 }
 .icon-under-mailbox {
@@ -461,6 +545,7 @@ main {
 }
 .design-styles_left-part {
   padding: 8.5rem 0 6rem 0;
+  margin: 0 auto;
 }
 .design-styles_left-part-content {
   font-family: $font-one;
@@ -472,15 +557,15 @@ main {
   }
 }
 .design-styles_right-part {
-  width: 70%;
+  width: 65%;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 360px);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 25rem);
+  // grid-template-rows: repeat(2, 1fr);
   grid-gap: 1rem;
 
   img {
-    max-width: 360px;
+    // width: 360px;
     padding: 1.5rem;
   }
   .first {
@@ -488,6 +573,11 @@ main {
   }
   .second {
     padding-bottom: 5rem;
+  }
+  .first,
+  .second {
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -839,6 +929,7 @@ hr {
     line-height: 24px;
     background: transparent;
     border-bottom: 1px solid $gray-text;
+    width: 100%;
   }
   input[type="button"] {
     border: none;
@@ -848,6 +939,7 @@ hr {
     padding: 1.25rem 3.375rem;
     font-size: 15px;
     line-height: 26px;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
   }
 }
 
@@ -890,6 +982,9 @@ hr {
     .menu-links {
       padding: 1.5rem 0;
     }
+  }
+  .main-form {
+    top: 9rem;
   }
 
   /* PROJECTS */
@@ -1003,10 +1098,24 @@ hr {
   .mobile {
     display: block;
   }
-  .container {
+  .container,
+  .header-menu {
     width: 680px;
   }
+  .main-form {
+    top: 4rem;
+    width: auto;
+  }
   /*HEADER */
+  .header-menu {
+    font-size: 12px;
+    line-height: 14px;
+    flex-direction: row;
+
+    a.underline {
+      color: $white;
+    }
+  }
   .header-big-part {
     .header-banner {
       width: 100%;
@@ -1038,13 +1147,12 @@ hr {
       align-items: center;
 
       .design-styles_left-part {
-        padding: 5rem 0 0 0 ;
+        padding: 5rem 0 0 0;
       }
     }
   }
   /* ADDRESSES */
   .addresses {
-
     .map {
       width: 40rem;
     }
@@ -1064,15 +1172,7 @@ hr {
   .mobile {
     display: block;
   }
-  .header-menu {
-    font-size: 12px;
-    line-height: 14px;
 
-    a.underline {
-      color: $white;
-      text-decoration: none;
-    }
-  }
   /* HEADER */
   .header-big-part {
     .header-banner {
@@ -1284,7 +1384,8 @@ hr {
     .form-container_inputs {
       padding: 2rem 0;
 
-      input[type="button"], input[type="text"] {
+      input[type="button"],
+      input[type="text"] {
         font-family: $font-two;
         width: 100%;
       }
