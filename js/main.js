@@ -35,8 +35,8 @@ contact.addEventListener("click", function() {
 }, false);
 
 /* REGEXES FOR VALIDATION */
-let nameRegex = /[A-Za-z]/;
-let numRegex = /[0-9]/;
+let nameRegex = /^[A-Za-z]+$/;
+let numRegex = /^[0-9]+$/;
 let emailRegex =  /^\S+@\S+\.\S+$/;
 
 /* ONLINE CONTROL FORM VALIDATION */
@@ -227,6 +227,7 @@ let contactQuestionErr = document.getElementById("contactQuestionErr");
 let contactCheckbox = document.getElementById("contactCheckbox");
 let contactCheckErr = document.getElementById("contactCheckErr");
 let contactBtn = document.getElementById("contactBtn");
+let contactAnswer = document.getElementById("contactAnswer");
 
 function contactForm () {
     let conNameVal = contactName.value;
@@ -245,7 +246,7 @@ function contactForm () {
         contactPhoneErr.innerHTML = "";
     }
 
-    if (conQuestVal === "" || nameRegex.test(conQuestVal) === false) {
+    if (conQuestVal === "") {
         contactQuestionErr.innerHTML = `<p>Please, print your question</p>`;
     } else {
         contactQuestionErr.innerHTML = "";
@@ -261,7 +262,11 @@ function contactForm () {
     conPhoneVal !== "" && numRegex.test(conPhoneVal) !== false &&
     conQuestVal !== "" && nameRegex.test(conQuestVal) !== false &&
     contactCheckbox.checked != false) {
-        console.log('good');
+        contactAnswer.innerHTML = `<h1>Hello, <span class="answer-param">${conNameVal}</span>!
+        We will call you via number or email, which you provided to us
+         <span class="answer-param">(${conPhoneVal}) to 
+        discuss the details. Your question was: <span class="answer-param">${conQuestVal}</span>
+         </h1>`
     }
 }
 contactBtn.addEventListener("click", contactForm, false);
