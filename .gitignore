@@ -1,1 +1,4 @@
-media/
+src/media/
+node_modules/
+dist/media/
+package-lock.json

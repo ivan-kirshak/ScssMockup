@@ -1,0 +1,32 @@
+{
+  "name": "scssmockup",
+  "version": "1.0.0",
+  "description": "first shot with gulp, scss, and so on",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan-kirshak/ScssMockup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-kirshak/ScssMockup/issues"
+  },
+  "homepage": "https://github.com/ivan-kirshak/ScssMockup#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^4.13.1",
+    "rename": "^1.0.4"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "sass": "^1.25.0"
+  }
+}
